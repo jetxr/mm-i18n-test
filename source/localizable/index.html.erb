@@ -4,6 +4,9 @@ title: Hello
 
 <%= t(:home) %> <br />
 
-<%= link_to t(:hello), "/hello.html" %> <br />
+<! -- does not work -->
+<%= link_to t(:hello), "/hello.html" %> <br /> 
 <%= link_to t(:hello), "/hello/index.html" %> <br />
+
+<! -- works -->
 <%= link_to t(:hello), extensions[:i18n].localized_path("/hello.html", I18n.locale) %>
