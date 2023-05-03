@@ -1,0 +1,9 @@
+---
+title: Hello
+---
+
+<%= t(:home) %> <br />
+
+<%= link_to t(:hello), "/hello.html" %> <br />
+<%= link_to t(:hello), "/hello/index.html" %> <br />
+<%= link_to t(:hello), extensions[:i18n].localized_path("/hello.html", I18n.locale) %>
